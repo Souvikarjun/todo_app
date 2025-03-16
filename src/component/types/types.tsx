@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 export interface inputProps{
     name: string;
-    type: string;
+    type?: string;
     placeholder?: string;
     value?: string;
 }
@@ -21,4 +21,11 @@ export interface buttonProps{
     onClick? : () => void;
     actionButton?: boolean;
     bgColor: string
+}
+
+export interface todoProps{
+    id: string,
+    title: string | null,
+    isCompleted : boolean,
+    createdAt?: Date,
 }

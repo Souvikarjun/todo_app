@@ -12,7 +12,8 @@ export default function Form({children, action , className, onSubmit}: formProps
             await action(FormData);
             ref.current?.reset()
         }   
-        }onSubmit={onSubmit} ref={ref}>{children}</form>
+      }
+      onSubmit={onSubmit} ref={ref}>{children}</form>
   )
 }
 
