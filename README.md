@@ -6,7 +6,7 @@
 <ul>
   <li><strong>Frontend:</strong> Next.js (React)</li>
   <li><strong>Backend:</strong> API Routes (Next.js)</li>
-  <li><strong>Database:</strong> MongoDB (with Mongoose or native driver)</li>
+  <li><strong>Database:</strong> MongoDB (with prisma)</li>
   <li><strong>Styling:</strong> Tailwind CSS</li>
 </ul>
 
@@ -20,13 +20,12 @@
 
 <h2>📁 Folder Structure</h2>
 <pre><code>/
-├── app/              # App Router structure
-│   ├── page.tsx      # Main ToDo UI
-├── lib/db.ts         # MongoDB connection utility
-├── models/Todo.ts    # Todo model (Mongoose)
-├── components/       # Reusable components
-└── styles/           # Tailwind CSS config</code></pre>
-
+├── app/                # App Router structure
+│   ├── page.tsx        # Main ToDo UI
+│   ├── global.css      # styles of UI
+├── components/type.ts  # Todo model (prisma)
+└── components/         # Reusable components
+  
 <h2>⚙️ Setup Instructions</h2>
 <pre><code># 1. Clone the repository
 git clone https://github.com/yourusername/nextjs-todo-app.git
