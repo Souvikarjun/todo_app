@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1>✅ ToDo App (Next.js + MongoDB)</h1>
 
-## Getting Started
+<p>A simple and modern ToDo application built with <strong>Next.js</strong> and <strong>MongoDB</strong>. Create, manage, and delete your daily tasks with ease — all with a clean, full-stack architecture.</p>
 
-First, run the development server:
+<h2>🔧 Tech Stack</h2>
+<ul>
+  <li><strong>Frontend:</strong> Next.js (React)</li>
+  <li><strong>Backend:</strong> API Routes (Next.js)</li>
+  <li><strong>Database:</strong> MongoDB (with Mongoose or native driver)</li>
+  <li><strong>Styling:</strong> Tailwind CSS</li>
+</ul>
 
-```bash
+<h2>🚀 Features</h2>
+<ul>
+  <li>Create new tasks</li>
+  <li>Mark tasks as complete/incomplete</li>
+  <li>Delete tasks</li>
+  <li>Fully responsive UI</li>
+</ul>
+
+<h2>📁 Folder Structure</h2>
+<pre><code>/
+├── app/              # App Router structure
+│   ├── page.tsx      # Main ToDo UI
+├── lib/db.ts         # MongoDB connection utility
+├── models/Todo.ts    # Todo model (Mongoose)
+├── components/       # Reusable components
+└── styles/           # Tailwind CSS config</code></pre>
+
+<h2>⚙️ Setup Instructions</h2>
+<pre><code># 1. Clone the repository
+git clone https://github.com/yourusername/nextjs-todo-app.git
+cd nextjs-todo-app
+
+# 2. Install dependencies
+npm install
+
+# 3. Create a .env.local file
+MONGODB_URI=your_mongodb_connection_string
+
+# 4. Run the app
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+</code></pre>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<h2>📜 License</h2>
+<p>MIT – Free to use, learn from, and modify.</p>
